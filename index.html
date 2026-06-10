@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sp1ders war3z // ACCESS NODE</title>
+  <meta name="description" content="sp1ders war3z — underground hardware modification archive">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <header class="site-header">
+  <pre class="ascii-spider" aria-hidden="true">
+                         \         /
+                          \       /
+                           \     /
+                            \   /
+                     \       \ /       /
+                      \       |       /
+                       \      |      /
+                        \     |     /
+                         \    |    /
+                          \   |   /
+                           \  |  /
+                            \ | /
+                         .---'_'---.
+                        / .'     '. \
+                       / /  @ @ @  \ \
+                      | |  @ @ @ @  | |
+                      | |    \_/    | |
+                       \|    .'.    |/
+                        |   /   \   |
+                         \ |     | /
+              ___         \|     |/         ___
+             /   \         |     |         /   \
+            /     \        |     |        /     \
+           /       \       |     |       /       \
+          /         \      |     |      /         \
+         /           \     |     |     /           \
+        /             \    |     |    /             \
+       /               \   |     |   /               \
+      /                 \  |     |  /                 \
+     /                   \ |     | /                   \
+    /                     \|     |/                     \
+  </pre>
+    <div class="boot-log" id="bootLog" aria-hidden="true"></div>
+    <h1 class="glitch-title" data-text="sp1ders war3z">sp1ders war3z</h1>
+    <p class="tagline"><span class="cursor-blink">█</span> unauthorized access granted — select a node</p>
+    <div class="status-bar">
+      <span>NET: <em class="pulse">ONLINE</em></span>
+      <span>TRACE: <em class="safe">NULL</em></span>
+      <span>NODE: 0xDEADBEEF</span>
+    </div>
+  </header>
+
+  <main class="node-grid">
+    <button class="node-card" data-panel="consoles" aria-label="Open Hacked Consoles">
+      <span class="node-id">[01]</span>
+      <span class="node-icon">▣</span>
+      <h2>Hacked Consoles</h2>
+      <p>Custom firmware · modchips · homebrew pipelines</p>
+      <span class="node-arrow">→ INJECT</span>
+    </button>
+
+    <button class="node-card" data-panel="microware" aria-label="Open Microware Devices">
+      <span class="node-id">[02]</span>
+      <span class="node-icon">◈</span>
+      <h2>Microware Devices</h2>
+      <p>Microcontrollers · RF sniffers · dead drops</p>
+      <span class="node-arrow">→ DEPLOY</span>
+    </button>
+
+    <button class="node-card" data-panel="phones" aria-label="Open Phone Upgrades">
+      <span class="node-id">[03]</span>
+      <span class="node-icon">◎</span>
+      <h2>Phone Upgrades</h2>
+      <p>Root exploits · custom ROMs · baseband hacks</p>
+      <span class="node-arrow">→ FLASH</span>
+    </button>
+
+    <button class="node-card" data-panel="plantable" aria-label="Open Plantable Devices">
+      <span class="node-id">[04]</span>
+      <span class="node-icon">✦</span>
+      <h2>Plantable Devices</h2>
+      <p>Covert implants · USB seeds · environmental bugs</p>
+      <span class="node-arrow">→ PLANT</span>
+    </button>
+  </main>
+
+  <footer class="site-footer">
+    <pre class="footer-ascii" aria-hidden="true">
+  \\//  \\//  \\//
+   \/    \/    \/
+    SP1DER NETWORK — NO LOGS — NO MERCY
+    </pre>
+    <p>© sp1ders war3z · all transmissions encrypted</p>
+  </footer>
+
+  <!-- Panel: Hacked Consoles -->
+  <dialog class="panel" id="panel-consoles" aria-labelledby="title-consoles">
+    <div class="panel-inner">
+      <button class="panel-close" aria-label="Close panel">✕ ESC</button>
+      <header class="panel-header">
+        <span class="panel-tag">NODE_01 // CONSOLES</span>
+        <h2 id="title-consoles">Hacked Consoles</h2>
+      </header>
+      <div class="panel-body">
+        <div class="terminal-block">
+          <p class="terminal-prompt">root@sp1der:~$ cat consoles.manifest</p>
+          <ul class="manifest-list">
+            <li>
+              <strong>PS2 · FMCB + OPL</strong>
+              <span>Free McBoot chainloader. SATA upgrade path. Silent fan mod. The classics never die — they get patched.</span>
+            </li>
+            <li>
+              <strong>Xbox · TSOP / OpenXenium</strong>
+              <span>128MB RAM unlock. Custom dashboards. FTP over Ethernet. Because the green box was always a PC in disguise.</span>
+            </li>
+            <li>
+              <strong>Switch · Atmosphere</strong>
+              <span>RCM payload injection. EmuMMC partition. Tinfoil pipeline. Portable chaos in handheld form.</span>
+            </li>
+            <li>
+              <strong>Wii U · Tiramisu</strong>
+              <span>Full system access. vWii homebrew. Pretendo network. Nintendo's walled garden has holes.</span>
+            </li>
+            <li>
+              <strong>3DS · Luma3DS</strong>
+              <span>Region free. GodMode9 file manager. FBI installer. Two screens, zero restrictions.</span>
+            </li>
+          </ul>
+        </div>
+        <p class="panel-flavor">"Mess with the best, die like the rest." — every modder's README, probably.</p>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Panel: Microware Devices -->
+  <dialog class="panel" id="panel-microware" aria-labelledby="title-microware">
+    <div class="panel-inner">
+      <button class="panel-close" aria-label="Close panel">✕ ESC</button>
+      <header class="panel-header">
+        <span class="panel-tag">NODE_02 // MICROWARE</span>
+        <h2 id="title-microware">Microware Devices</h2>
+      </header>
+      <div class="panel-body">
+        <div class="terminal-block">
+          <p class="terminal-prompt">root@sp1der:~$ ls -la /dev/microware/</p>
+          <ul class="manifest-list">
+            <li>
+              <strong>ESP32 Ghost Node</strong>
+              <span>WiFi deauth sniffer. BLE beacon spoofer. Runs off a coin cell for weeks. Fits in a watch band.</span>
+            </li>
+            <li>
+              <strong>Raspberry Pi Zero W · Drop</strong>
+              <span>USB gadget mode. Reverse shell on plug-in. Looks like a generic flash drive. It isn't.</span>
+            </li>
+            <li>
+              <strong>RTL-SDR + Flipper</strong>
+              <span>433MHz replay. Garage door archaeology. Sub-GHz signal capture. The parking lot is a protocol buffet.</span>
+            </li>
+            <li>
+              <strong>Arduino Pro Micro · HID</strong>
+              <span>Rubber ducky scripts. Keystroke injection. 3 seconds from plug to root shell. Trust no USB port.</span>
+            </li>
+            <li>
+              <strong>ESP8266 Deauth Beacon</strong>
+              <span>Creates phantom networks. Captive portal honeypot. Social engineering in 2.4GHz.</span>
+            </li>
+          </ul>
+        </div>
+        <p class="panel-flavor">Small packages. Big payloads. The microware stack runs silent until it doesn't.</p>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Panel: Phone Upgrades -->
+  <dialog class="panel" id="panel-phones" aria-labelledby="title-phones">
+    <div class="panel-inner">
+      <button class="panel-close" aria-label="Close panel">✕ ESC</button>
+      <header class="panel-header">
+        <span class="panel-tag">NODE_03 // PHONES</span>
+        <h2 id="title-phones">Phone Upgrades</h2>
+      </header>
+      <div class="panel-body">
+        <div class="terminal-block">
+          <p class="terminal-prompt">root@sp1der:~$ adb devices -l</p>
+          <ul class="manifest-list">
+            <li>
+              <strong>Magisk · Zygisk Modules</strong>
+              <span>Shamiko hide. LSPosed framework. Banking apps none the wiser. Root that vanishes on demand.</span>
+            </li>
+            <li>
+              <strong>Custom ROM · LineageOS</strong>
+              <span>Debloated. KernelSU baked in. F-Droid only. Your phone, your rules, their warranty void.</span>
+            </li>
+            <li>
+              <strong>Baseband Unlock</strong>
+              <span>IMEI repair. Carrier bypass. Band aggregation hacks. The radio stack was never meant to be read-only.</span>
+            </li>
+            <li>
+              <strong>iOS · Checkra1n Path</strong>
+              <span>Bootrom exploit. SSH over USB. Filza file manager. Apple's garden has a back door in the silicon.</span>
+            </li>
+            <li>
+              <strong>GrapheneOS Hardening</strong>
+              <span>Auditor attestation. Sandboxed Google Play. Network firewall per-app. Paranoia as a feature.</span>
+            </li>
+          </ul>
+        </div>
+        <p class="panel-flavor">Your pocket computer runs your code or it runs theirs. Pick one.</p>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Panel: Plantable Devices -->
+  <dialog class="panel" id="panel-plantable" aria-labelledby="title-plantable">
+    <div class="panel-inner">
+      <button class="panel-close" aria-label="Close panel">✕ ESC</button>
+      <header class="panel-header">
+        <span class="panel-tag">NODE_04 // PLANTABLE</span>
+        <h2 id="title-plantable">Plantable Devices</h2>
+      </header>
+      <div class="panel-body">
+        <div class="terminal-block">
+          <p class="terminal-prompt">root@sp1der:~$ ./deploy --stealth --persist</p>
+          <ul class="manifest-list">
+            <li>
+              <strong>USB Dead Drop · Wall Port</strong>
+              <span>Epoxy-sealed flash drive behind a loose outlet cover. Dead drop network IRL. Leave data, take data.</span>
+            </li>
+            <li>
+              <strong>LAN Turtle · Ethernet Seed</strong>
+              <span>Inline network tap. SSH pivot point. Looks like a cable tester. Sits between wall jack and switch forever.</span>
+            </li>
+            <li>
+              <strong>Plant Pot Beacon</strong>
+              <span>Solar-charged LoRa node in a fake rock. Soil moisture sensor cover story. Reports back across 2km.</span>
+            </li>
+            <li>
+              <strong>Smoke Detector Shell</strong>
+              <span>ESP32-CAM inside a cloned enclosure. Motion-triggered upload. Nobody looks up. Nobody questions it.</span>
+            </li>
+            <li>
+              <strong>Keylogger · KVM Inline</strong>
+              <span>Between keyboard and PC. Stores weeks of keystrokes. Retrieves on next "maintenance" visit.</span>
+            </li>
+          </ul>
+        </div>
+        <p class="panel-flavor">They audited the VPN. They didn't audit the smoke detector. Real persistence lives in the walls, not the registry.</p>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
