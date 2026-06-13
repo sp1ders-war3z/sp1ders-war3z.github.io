@@ -327,19 +327,93 @@ body {
   position: relative;
   z-index: 1;
   text-align: center;
-  padding: 2rem 1.5rem 3rem;
+  padding: 2.5rem 1.5rem 3rem;
   border-top: 1px solid var(--border);
   margin-top: 2rem;
+  background: linear-gradient(0deg, rgba(0, 240, 255, 0.04) 0%, transparent 100%);
 }
 
 .footer-ascii {
   font-size: 9px;
   color: var(--text-dim);
-  margin-bottom: 1rem;
-  opacity: 0.6;
+  margin-bottom: 1.5rem;
+  opacity: 0.5;
 }
 
-.site-footer p {
+.footer-contact {
+  max-width: 720px;
+  margin: 0 auto 1.5rem;
+  padding: 1.5rem 1.25rem;
+  border: 1px solid rgba(0, 240, 255, 0.45);
+  background: rgba(0, 0, 0, 0.45);
+  box-shadow:
+    var(--glow-cyan),
+    inset 0 0 40px rgba(0, 240, 255, 0.04);
+  clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 14px 100%, 0 calc(100% - 14px));
+}
+
+.footer-contact-label {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.35em;
+  color: var(--orange-bright);
+  margin-bottom: 1.25rem;
+  text-shadow: var(--glow-orange);
+}
+
+.footer-contact-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  text-align: left;
+  padding: 0.85rem 0;
+  border-bottom: 1px dashed rgba(0, 240, 255, 0.2);
+}
+
+.footer-contact-block:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.footer-contact-key {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  color: var(--green);
+  text-shadow: 0 0 12px rgba(57, 255, 20, 0.5);
+}
+
+.footer-contact-value {
+  font-family: var(--font-mono);
+  font-size: clamp(11px, 2.5vw, 14px);
+  font-weight: 700;
+  color: var(--cyan);
+  line-height: 1.5;
+  word-break: break-all;
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.35);
+}
+
+a.footer-contact-value {
+  text-decoration: none;
+  transition: color 0.2s, text-shadow 0.2s;
+}
+
+a.footer-contact-value:hover,
+a.footer-contact-value:focus-visible {
+  color: var(--text);
+  text-shadow: var(--glow-cyan);
+  outline: none;
+}
+
+.footer-session-token {
+  display: block;
+  font-size: clamp(10px, 2.2vw, 13px);
+  letter-spacing: 0.04em;
+}
+
+.footer-copy {
   font-size: 11px;
   color: var(--text-dim);
 }
